@@ -1,0 +1,11 @@
+[build]
+  publish = "build"   # Change to your output directory (e.g., "dist", "public", or "build")
+  command = "npm run build" # Update this if your build command is different
+
+[dev]
+  command = "npm start"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
