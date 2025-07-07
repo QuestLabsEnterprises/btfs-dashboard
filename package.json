@@ -110,6 +110,14 @@
     "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
     "bundle-report": "webpack-bundle-analyzer --port 8888 build/stats.json"
   },
+
+  "scripts": {
+  ...
+  "netlify:build": "npm run build"
+},
+"engines": {
+  "node": "18.x"
+}
   "eslintConfig": {
     "extends": "react-app"
   },
